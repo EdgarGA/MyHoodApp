@@ -125,12 +125,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="568"/>
+            <point key="canvasLocation" x="515" y="568"/>
         </scene>
-        <!--Add PostVC-->
+        <!--Add Post View Controller-->
         <scene sceneID="re6-Hn-WiN">
             <objects>
-                <viewController id="vcT-ii-DEQ" customClass="AddPostVC" customModule="MyHood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcT-ii-DEQ" customClass="AddPostViewController" customModule="MyHood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="goZ-K4-YOG"/>
                         <viewControllerLayoutGuide type="bottom" id="1bM-wa-SCw"/>
@@ -161,6 +161,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="vcT-ii-DEQ" eventType="touchUpInside" id="ilH-0c-FG5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -172,14 +175,103 @@
                                     <constraint firstAttribute="height" constant="64" id="sVu-zE-pOT"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="hpw-4F-wSq">
+                                <rect key="frame" x="180" y="99" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="F8O-vs-bO5"/>
+                                    <constraint firstAttribute="height" constant="240" id="ejz-EJ-FDs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeB-DM-dfM">
+                                <rect key="frame" x="180" y="99" width="240" height="240"/>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPhotoBtnPressed:" destination="vcT-ii-DEQ" eventType="touchUpInside" id="BdY-U7-VXw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rI9-0b-E6C" customClass="HoshiTextField" customModule="MyHood" customModuleProvider="target">
+                                <rect key="frame" x="40" y="469" width="520" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NFy-Rv-gdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-4S-gtW">
+                                <rect key="frame" x="173" y="549" width="255" height="41"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="4S1-yI-rqi"/>
+                                    <constraint firstAttribute="width" constant="255" id="Grk-rN-0UO"/>
+                                </constraints>
+                                <state key="normal" title="Make Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeBtnPressed:" destination="vcT-ii-DEQ" eventType="touchUpInside" id="Oci-Wn-1St"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ukj-0K-dhQ" customClass="HoshiTextField" customModule="MyHood" customModuleProvider="target">
+                                <rect key="frame" x="40" y="384" width="520" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m2w-CD-k5l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="E3g-4S-gtW" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="1xu-zC-xIz"/>
+                            <constraint firstItem="E3g-4S-gtW" firstAttribute="top" secondItem="rI9-0b-E6C" secondAttribute="bottom" constant="40" id="6NL-WW-hMz"/>
+                            <constraint firstItem="Ukj-0K-dhQ" firstAttribute="top" secondItem="JeB-DM-dfM" secondAttribute="bottom" constant="45" id="CJ4-YH-1mu"/>
                             <constraint firstItem="pbt-tN-tDw" firstAttribute="top" secondItem="vG7-dx-sY9" secondAttribute="top" id="Gqr-lJ-DQ1"/>
+                            <constraint firstItem="Ukj-0K-dhQ" firstAttribute="leading" secondItem="vG7-dx-sY9" secondAttribute="leadingMargin" constant="20" id="KgU-sT-DBE"/>
+                            <constraint firstItem="hpw-4F-wSq" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="Lsp-oh-vTq"/>
                             <constraint firstItem="pbt-tN-tDw" firstAttribute="leading" secondItem="vG7-dx-sY9" secondAttribute="leading" id="SeB-Oc-V39"/>
+                            <constraint firstItem="JeB-DM-dfM" firstAttribute="centerY" secondItem="hpw-4F-wSq" secondAttribute="centerY" id="US1-fc-Pfz"/>
                             <constraint firstAttribute="trailing" secondItem="pbt-tN-tDw" secondAttribute="trailing" id="Xp7-Ib-gNj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rI9-0b-E6C" secondAttribute="trailing" constant="20" id="ZrG-hx-BqS"/>
+                            <constraint firstItem="rI9-0b-E6C" firstAttribute="top" secondItem="Ukj-0K-dhQ" secondAttribute="bottom" constant="45" id="abw-GO-jjk"/>
+                            <constraint firstItem="Ukj-0K-dhQ" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="buU-qb-sqG"/>
+                            <constraint firstItem="JeB-DM-dfM" firstAttribute="height" secondItem="hpw-4F-wSq" secondAttribute="height" id="cki-k4-3GH"/>
+                            <constraint firstItem="rI9-0b-E6C" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="faI-B9-lmh"/>
+                            <constraint firstItem="rI9-0b-E6C" firstAttribute="leading" secondItem="vG7-dx-sY9" secondAttribute="leadingMargin" constant="20" id="rBv-3p-6HX"/>
+                            <constraint firstItem="JeB-DM-dfM" firstAttribute="centerX" secondItem="hpw-4F-wSq" secondAttribute="centerX" id="syC-ub-5y1"/>
+                            <constraint firstItem="hpw-4F-wSq" firstAttribute="top" secondItem="pbt-tN-tDw" secondAttribute="bottom" constant="35" id="wV3-8Q-t81"/>
+                            <constraint firstItem="JeB-DM-dfM" firstAttribute="width" secondItem="hpw-4F-wSq" secondAttribute="width" id="woX-4j-Dfa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ukj-0K-dhQ" secondAttribute="trailing" constant="20" id="zUD-s9-zpQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descTextField" destination="rI9-0b-E6C" id="G7c-m4-ett"/>
+                        <outlet property="postImg" destination="hpw-4F-wSq" id="c0C-gi-le9"/>
+                        <outlet property="titleTextField" destination="Ukj-0K-dhQ" id="DBe-B2-gyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NL-hN-ILI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

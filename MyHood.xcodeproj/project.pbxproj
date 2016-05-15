@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6180D3721CE8CCEA009CAB76 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180D3711CE8CCEA009CAB76 /* DataService.swift */; };
 		618913C11CE822AC006AFC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913C01CE822AC006AFC98 /* AppDelegate.swift */; };
 		618913C31CE822AC006AFC98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913C21CE822AC006AFC98 /* ViewController.swift */; };
 		618913C61CE822AC006AFC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618913C41CE822AC006AFC98 /* Main.storyboard */; };
@@ -17,7 +18,9 @@
 		618913E41CE822AC006AFC98 /* MyHoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913E31CE822AC006AFC98 /* MyHoodUITests.swift */; };
 		618913F61CE82368006AFC98 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F51CE82368006AFC98 /* Post.swift */; };
 		618913F81CE82BA8006AFC98 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F71CE82BA8006AFC98 /* PostCell.swift */; };
-		618913FA1CE8355C006AFC98 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F91CE8355C006AFC98 /* AddPostVC.swift */; };
+		618913FA1CE8355C006AFC98 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F91CE8355C006AFC98 /* AddPostViewController.swift */; };
+		618913FE1CE83AAA006AFC98 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913FC1CE83AAA006AFC98 /* TextFieldsEffects.swift */; };
+		618913FF1CE83AAA006AFC98 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913FD1CE83AAA006AFC98 /* HoshiTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6180D3711CE8CCEA009CAB76 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		618913BD1CE822AC006AFC98 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618913C01CE822AC006AFC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618913C21CE822AC006AFC98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MyHood/ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 		618913E51CE822AC006AFC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618913F51CE82368006AFC98 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		618913F71CE82BA8006AFC98 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		618913F91CE8355C006AFC98 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		618913F91CE8355C006AFC98 /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		618913FC1CE83AAA006AFC98 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		618913FD1CE83AAA006AFC98 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6180D3701CE8CCDA009CAB76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6180D3711CE8CCEA009CAB76 /* DataService.swift */,
+			);
+			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		618913B41CE822AB006AFC98 = {
 			isa = PBXGroup;
 			children = (
-				618913F11CE822C9006AFC98 /* Models */,
-				618913F21CE822D1006AFC98 /* Views */,
-				618913F31CE822D8006AFC98 /* Controllers */,
 				618913BF1CE822AC006AFC98 /* MyHood */,
-				618913F41CE822DF006AFC98 /* Supporting Files */,
 				618913D71CE822AC006AFC98 /* MyHoodTests */,
 				618913E21CE822AC006AFC98 /* MyHoodUITests */,
 				618913BE1CE822AC006AFC98 /* Products */,
@@ -109,9 +120,14 @@
 		618913BF1CE822AC006AFC98 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				6180D3701CE8CCDA009CAB76 /* Services */,
+				618913F11CE822C9006AFC98 /* Model */,
+				618913F21CE822D1006AFC98 /* Views */,
+				618913F31CE822D8006AFC98 /* Controllers */,
 				618913C01CE822AC006AFC98 /* AppDelegate.swift */,
 				618913CF1CE822AC006AFC98 /* Info.plist */,
 				618913C71CE822AC006AFC98 /* MyHood.xcdatamodeld */,
+				618913F41CE822DF006AFC98 /* Supporting Files */,
 			);
 			path = MyHood;
 			sourceTree = "<group>";
@@ -134,12 +150,13 @@
 			path = MyHoodUITests;
 			sourceTree = "<group>";
 		};
-		618913F11CE822C9006AFC98 /* Models */ = {
+		618913F11CE822C9006AFC98 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				618913F51CE82368006AFC98 /* Post.swift */,
 			);
-			name = Models;
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		618913F21CE822D1006AFC98 /* Views */ = {
@@ -148,17 +165,20 @@
 				618913F71CE82BA8006AFC98 /* PostCell.swift */,
 				618913C41CE822AC006AFC98 /* Main.storyboard */,
 				618913CC1CE822AC006AFC98 /* LaunchScreen.storyboard */,
+				618914001CE83AB2006AFC98 /* TexFieldEffects */,
 			);
 			name = Views;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		618913F31CE822D8006AFC98 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				618913C21CE822AC006AFC98 /* ViewController.swift */,
-				618913F91CE8355C006AFC98 /* AddPostVC.swift */,
+				618913F91CE8355C006AFC98 /* AddPostViewController.swift */,
 			);
 			name = Controllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		618913F41CE822DF006AFC98 /* Supporting Files */ = {
@@ -167,6 +187,16 @@
 				618913CA1CE822AC006AFC98 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		618914001CE83AB2006AFC98 /* TexFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				618913FC1CE83AAA006AFC98 /* TextFieldsEffects.swift */,
+				618913FD1CE83AAA006AFC98 /* HoshiTextField.swift */,
+			);
+			name = TexFieldEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,11 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6180D3721CE8CCEA009CAB76 /* DataService.swift in Sources */,
 				618913C91CE822AC006AFC98 /* MyHood.xcdatamodeld in Sources */,
 				618913C31CE822AC006AFC98 /* ViewController.swift in Sources */,
 				618913C11CE822AC006AFC98 /* AppDelegate.swift in Sources */,
+				618913FF1CE83AAA006AFC98 /* HoshiTextField.swift in Sources */,
+				618913FE1CE83AAA006AFC98 /* TextFieldsEffects.swift in Sources */,
 				618913F61CE82368006AFC98 /* Post.swift in Sources */,
-				618913FA1CE8355C006AFC98 /* AddPostVC.swift in Sources */,
+				618913FA1CE8355C006AFC98 /* AddPostViewController.swift in Sources */,
 				618913F81CE82BA8006AFC98 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +565,7 @@
 				618913EA1CE822AC006AFC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		618913EB1CE822AC006AFC98 /* Build configuration list for PBXNativeTarget "MyHoodTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +574,7 @@
 				618913ED1CE822AC006AFC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		618913EE1CE822AC006AFC98 /* Build configuration list for PBXNativeTarget "MyHoodUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +583,7 @@
 				618913F01CE822AC006AFC98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

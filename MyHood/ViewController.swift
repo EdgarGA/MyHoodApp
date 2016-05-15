@@ -11,25 +11,13 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        var post1 = Post(imagePaht: "", title: "Post 1", postDesc: "HEY")
-        var post2 = Post(imagePaht: "", title: "Post 2", postDesc: "HEY")
-        var post3 = Post(imagePaht: "", title: "Post 3", postDesc: "HEY")
-        var post4 = Post(imagePaht: "", title: "Post 4", postDesc: "HEY")
-        
-        posts.append(post1)
-        posts.append(post2)
-        posts.append(post3)
-        posts.append(post4)
-        
-        tableView.reloadData()
+        DataService.instance.loadPosts()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.onPostsLoaded(_:)), name: "postsLoaded", object: nil)
 
 
     }
@@ -40,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.row]
+        let post = DataService.instance.loadedPost [indexPath.row]
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             cell.configureCell(post)
             return cell
@@ -56,7 +44,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return DataService.instance.loadedPost.count
+    }
+    
+    func onPostsLoaded(notif: AnyObject) {
+        tableView.reloadData()
     }
 
    
