@@ -15,6 +15,7 @@
 		618913CE1CE822AC006AFC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618913CC1CE822AC006AFC98 /* LaunchScreen.storyboard */; };
 		618913D91CE822AC006AFC98 /* MyHoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913D81CE822AC006AFC98 /* MyHoodTests.swift */; };
 		618913E41CE822AC006AFC98 /* MyHoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913E31CE822AC006AFC98 /* MyHoodUITests.swift */; };
+		618913F61CE82368006AFC98 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F51CE82368006AFC98 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +38,10 @@
 /* Begin PBXFileReference section */
 		618913BD1CE822AC006AFC98 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618913C01CE822AC006AFC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		618913C21CE822AC006AFC98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		618913C21CE822AC006AFC98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MyHood/ViewController.swift; sourceTree = "<group>"; };
 		618913C51CE822AC006AFC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		618913C81CE822AC006AFC98 /* MyHood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyHood.xcdatamodel; sourceTree = "<group>"; };
-		618913CA1CE822AC006AFC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		618913CA1CE822AC006AFC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MyHood/Assets.xcassets; sourceTree = "<group>"; };
 		618913CD1CE822AC006AFC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		618913CF1CE822AC006AFC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		618913D41CE822AC006AFC98 /* MyHoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,7 @@
 		618913DF1CE822AC006AFC98 /* MyHoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		618913E31CE822AC006AFC98 /* MyHoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoodUITests.swift; sourceTree = "<group>"; };
 		618913E51CE822AC006AFC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618913F51CE82368006AFC98 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,11 @@
 		618913B41CE822AB006AFC98 = {
 			isa = PBXGroup;
 			children = (
+				618913F11CE822C9006AFC98 /* Models */,
+				618913F21CE822D1006AFC98 /* Views */,
+				618913F31CE822D8006AFC98 /* Controllers */,
 				618913BF1CE822AC006AFC98 /* MyHood */,
+				618913F41CE822DF006AFC98 /* Supporting Files */,
 				618913D71CE822AC006AFC98 /* MyHoodTests */,
 				618913E21CE822AC006AFC98 /* MyHoodUITests */,
 				618913BE1CE822AC006AFC98 /* Products */,
@@ -100,9 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				618913C01CE822AC006AFC98 /* AppDelegate.swift */,
-				618913C21CE822AC006AFC98 /* ViewController.swift */,
 				618913C41CE822AC006AFC98 /* Main.storyboard */,
-				618913CA1CE822AC006AFC98 /* Assets.xcassets */,
 				618913CC1CE822AC006AFC98 /* LaunchScreen.storyboard */,
 				618913CF1CE822AC006AFC98 /* Info.plist */,
 				618913C71CE822AC006AFC98 /* MyHood.xcdatamodeld */,
@@ -126,6 +130,37 @@
 				618913E51CE822AC006AFC98 /* Info.plist */,
 			);
 			path = MyHoodUITests;
+			sourceTree = "<group>";
+		};
+		618913F11CE822C9006AFC98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				618913F51CE82368006AFC98 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		618913F21CE822D1006AFC98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		618913F31CE822D8006AFC98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				618913C21CE822AC006AFC98 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		618913F41CE822DF006AFC98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				618913CA1CE822AC006AFC98 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +297,7 @@
 				618913C91CE822AC006AFC98 /* MyHood.xcdatamodeld in Sources */,
 				618913C31CE822AC006AFC98 /* ViewController.swift in Sources */,
 				618913C11CE822AC006AFC98 /* AppDelegate.swift in Sources */,
+				618913F61CE82368006AFC98 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
