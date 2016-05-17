@@ -24,6 +24,7 @@ class AddPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         postImg.clipsToBounds = true
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        
     }
     
     @IBAction func makeBtnPressed(sender: AnyObject) {
@@ -35,6 +36,7 @@ class AddPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             DataService.instance.addPost(post)
             dismissViewControllerAnimated(true, completion: nil)
         }
+        
     }
     
     @IBAction func addPhotoBtnPressed(sender: UIButton!) {

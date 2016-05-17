@@ -21,6 +21,9 @@
 		618913FA1CE8355C006AFC98 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913F91CE8355C006AFC98 /* AddPostViewController.swift */; };
 		618913FE1CE83AAA006AFC98 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913FC1CE83AAA006AFC98 /* TextFieldsEffects.swift */; };
 		618913FF1CE83AAA006AFC98 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618913FD1CE83AAA006AFC98 /* HoshiTextField.swift */; };
+		80712E84D83318278B99BDE2 /* Pods_MyHoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC7A52770E409196D9996E5 /* Pods_MyHoodUITests.framework */; };
+		9B72394796B8D970988793E6 /* Pods_MyHood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C41D1F716198714E6D6F60 /* Pods_MyHood.framework */; };
+		E3044533308C411C4EB9DC9C /* Pods_MyHoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D16B80A95787E3576DFD814 /* Pods_MyHoodTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09941D1ADB38D54C1942CC51 /* Pods-MyHoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyHoodUITests/Pods-MyHoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C7A464E1AC74E87C90F2293 /* Pods-MyHood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyHood/Pods-MyHood.debug.xcconfig"; sourceTree = "<group>"; };
 		6180D3711CE8CCEA009CAB76 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		618913BD1CE822AC006AFC98 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618913C01CE822AC006AFC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +66,13 @@
 		618913F91CE8355C006AFC98 /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		618913FC1CE83AAA006AFC98 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
 		618913FD1CE83AAA006AFC98 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		6D16B80A95787E3576DFD814 /* Pods_MyHoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC7A52770E409196D9996E5 /* Pods_MyHoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8025119310042F3356196EEB /* Pods-MyHoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyHoodUITests/Pods-MyHoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86C41D1F716198714E6D6F60 /* Pods_MyHood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		937B285A5448753BBCED1E01 /* Pods-MyHood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHood.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyHood/Pods-MyHood.release.xcconfig"; sourceTree = "<group>"; };
+		F0C215C76903F81A8D39CE43 /* Pods-MyHoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyHoodTests/Pods-MyHoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5D025D95A4C682CB99D8D24 /* Pods-MyHoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyHoodTests/Pods-MyHoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B72394796B8D970988793E6 /* Pods_MyHood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3044533308C411C4EB9DC9C /* Pods_MyHoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80712E84D83318278B99BDE2 /* Pods_MyHoodUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A9902ABD806FABAB19B277A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86C41D1F716198714E6D6F60 /* Pods_MyHood.framework */,
+				6D16B80A95787E3576DFD814 /* Pods_MyHoodTests.framework */,
+				7FC7A52770E409196D9996E5 /* Pods_MyHoodUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6180D3701CE8CCDA009CAB76 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				618913BF1CE822AC006AFC98 /* MyHood */,
+				618913F41CE822DF006AFC98 /* Supporting Files */,
 				618913D71CE822AC006AFC98 /* MyHoodTests */,
 				618913E21CE822AC006AFC98 /* MyHoodUITests */,
 				618913BE1CE822AC006AFC98 /* Products */,
+				CAF9F23A1926014DEB05F05C /* Pods */,
+				5A9902ABD806FABAB19B277A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,14 +148,13 @@
 		618913BF1CE822AC006AFC98 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				618913C01CE822AC006AFC98 /* AppDelegate.swift */,
+				618913CF1CE822AC006AFC98 /* Info.plist */,
+				618913C71CE822AC006AFC98 /* MyHood.xcdatamodeld */,
 				6180D3701CE8CCDA009CAB76 /* Services */,
 				618913F11CE822C9006AFC98 /* Model */,
 				618913F21CE822D1006AFC98 /* Views */,
 				618913F31CE822D8006AFC98 /* Controllers */,
-				618913C01CE822AC006AFC98 /* AppDelegate.swift */,
-				618913CF1CE822AC006AFC98 /* Info.plist */,
-				618913C71CE822AC006AFC98 /* MyHood.xcdatamodeld */,
-				618913F41CE822DF006AFC98 /* Supporting Files */,
 			);
 			path = MyHood;
 			sourceTree = "<group>";
@@ -187,7 +214,6 @@
 				618913CA1CE822AC006AFC98 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
-			path = ..;
 			sourceTree = "<group>";
 		};
 		618914001CE83AB2006AFC98 /* TexFieldEffects */ = {
@@ -199,6 +225,19 @@
 			name = TexFieldEffects;
 			sourceTree = "<group>";
 		};
+		CAF9F23A1926014DEB05F05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C7A464E1AC74E87C90F2293 /* Pods-MyHood.debug.xcconfig */,
+				937B285A5448753BBCED1E01 /* Pods-MyHood.release.xcconfig */,
+				F5D025D95A4C682CB99D8D24 /* Pods-MyHoodTests.debug.xcconfig */,
+				F0C215C76903F81A8D39CE43 /* Pods-MyHoodTests.release.xcconfig */,
+				09941D1ADB38D54C1942CC51 /* Pods-MyHoodUITests.debug.xcconfig */,
+				8025119310042F3356196EEB /* Pods-MyHoodUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618913E81CE822AC006AFC98 /* Build configuration list for PBXNativeTarget "MyHood" */;
 			buildPhases = (
+				60B55B139F79E157CF30122D /* Check Pods Manifest.lock */,
 				618913B91CE822AC006AFC98 /* Sources */,
 				618913BA1CE822AC006AFC98 /* Frameworks */,
 				618913BB1CE822AC006AFC98 /* Resources */,
+				F1A012DE348B59BC48E35808 /* Embed Pods Frameworks */,
+				DA1E4BD365023FD0B94DF70E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618913EB1CE822AC006AFC98 /* Build configuration list for PBXNativeTarget "MyHoodTests" */;
 			buildPhases = (
+				B91F876673F8DBF9381CE9AE /* Check Pods Manifest.lock */,
 				618913D01CE822AC006AFC98 /* Sources */,
 				618913D11CE822AC006AFC98 /* Frameworks */,
 				618913D21CE822AC006AFC98 /* Resources */,
+				7E6F97D307F44474435CEDC3 /* Embed Pods Frameworks */,
+				86627B2011EF3A58ECC78A85 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 618913EE1CE822AC006AFC98 /* Build configuration list for PBXNativeTarget "MyHoodUITests" */;
 			buildPhases = (
+				B36FBCB3C130878F7A635860 /* Check Pods Manifest.lock */,
 				618913DB1CE822AC006AFC98 /* Sources */,
 				618913DC1CE822AC006AFC98 /* Frameworks */,
 				618913DD1CE822AC006AFC98 /* Resources */,
+				1F62A962457CECB5B6EB4CB4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +371,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F62A962457CECB5B6EB4CB4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHoodUITests/Pods-MyHoodUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B55B139F79E157CF30122D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6F97D307F44474435CEDC3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHoodTests/Pods-MyHoodTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86627B2011EF3A58ECC78A85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHoodTests/Pods-MyHoodTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36FBCB3C130878F7A635860 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B91F876673F8DBF9381CE9AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA1E4BD365023FD0B94DF70E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHood/Pods-MyHood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A012DE348B59BC48E35808 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHood/Pods-MyHood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		618913B91CE822AC006AFC98 /* Sources */ = {
@@ -480,6 +650,7 @@
 		};
 		618913E91CE822AC006AFC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7A464E1AC74E87C90F2293 /* Pods-MyHood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyHood/Info.plist;
@@ -491,6 +662,7 @@
 		};
 		618913EA1CE822AC006AFC98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937B285A5448753BBCED1E01 /* Pods-MyHood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyHood/Info.plist;
@@ -502,6 +674,7 @@
 		};
 		618913EC1CE822AC006AFC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D025D95A4C682CB99D8D24 /* Pods-MyHoodTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MyHoodTests/Info.plist;
@@ -514,6 +687,7 @@
 		};
 		618913ED1CE822AC006AFC98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C215C76903F81A8D39CE43 /* Pods-MyHoodTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MyHoodTests/Info.plist;
@@ -526,6 +700,7 @@
 		};
 		618913EF1CE822AC006AFC98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09941D1ADB38D54C1942CC51 /* Pods-MyHoodUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MyHoodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -537,6 +712,7 @@
 		};
 		618913F01CE822AC006AFC98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8025119310042F3356196EEB /* Pods-MyHoodUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MyHoodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

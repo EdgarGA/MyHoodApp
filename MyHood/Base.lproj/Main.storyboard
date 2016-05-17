@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -40,7 +40,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ye6-rt-lre" secondAttribute="bottom" constant="12" id="P8E-JV-LoY"/>
                                     <constraint firstAttribute="height" constant="64" id="Ph3-0v-umy"/>
@@ -166,7 +166,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="kcQ-R8-e8J" firstAttribute="centerY" secondItem="pbt-tN-tDw" secondAttribute="centerY" id="56p-6h-H4t"/>
                                     <constraint firstItem="8WW-Qg-27u" firstAttribute="centerX" secondItem="pbt-tN-tDw" secondAttribute="centerX" id="co3-DA-ukN"/>
@@ -175,7 +175,14 @@
                                     <constraint firstAttribute="height" constant="64" id="sVu-zE-pOT"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="hpw-4F-wSq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uploadImg" translatesAutoresizingMaskIntoConstraints="NO" id="pjz-4E-Ls0">
+                                <rect key="frame" x="275" y="192" width="51" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="540-BY-57h"/>
+                                    <constraint firstAttribute="height" constant="54" id="Qwq-RH-fBw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpw-4F-wSq">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="F8O-vs-bO5"/>
@@ -184,7 +191,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeB-DM-dfM">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
-                                <state key="normal" title="Add Photo">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -196,58 +203,85 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NFy-Rv-gdZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.098039215690000001" green="0.17254901959999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.13333333333333333" green="0.71764705882352942" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-4S-gtW">
-                                <rect key="frame" x="173" y="549" width="255" height="41"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="4S1-yI-rqi"/>
-                                    <constraint firstAttribute="width" constant="255" id="Grk-rN-0UO"/>
-                                </constraints>
-                                <state key="normal" title="Make Post">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="makeBtnPressed:" destination="vcT-ii-DEQ" eventType="touchUpInside" id="Oci-Wn-1St"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ukj-0K-dhQ" customClass="HoshiTextField" customModule="MyHood" customModuleProvider="target">
                                 <rect key="frame" x="40" y="384" width="520" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="m2w-CD-k5l"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.098039215690000001" green="0.17254901959999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                        <color key="value" red="1" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.13333333333333333" green="0.71764705882352942" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-4S-gtW" customClass="SwiftyButton" customModule="SwiftyButton">
+                                <rect key="frame" x="243" y="542" width="114" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="2Oq-ge-Rh6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="4S1-yI-rqi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="255" id="Grk-rN-0UO"/>
+                                    <constraint firstAttribute="height" constant="38" id="luS-D6-A8x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <state key="normal" title="Make Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonPressDepth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.11764705882352941" green="0.75686274509803919" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.082352941176470587" green="0.6588235294117647" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4S1-yI-rqi"/>
+                                        <exclude reference="Grk-rN-0UO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="makeBtnPressed:" destination="vcT-ii-DEQ" eventType="touchUpInside" id="Oci-Wn-1St"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="pjz-4E-Ls0" firstAttribute="centerY" secondItem="JeB-DM-dfM" secondAttribute="centerY" id="1hW-yM-Dae"/>
                             <constraint firstItem="E3g-4S-gtW" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="1xu-zC-xIz"/>
-                            <constraint firstItem="E3g-4S-gtW" firstAttribute="top" secondItem="rI9-0b-E6C" secondAttribute="bottom" constant="40" id="6NL-WW-hMz"/>
                             <constraint firstItem="Ukj-0K-dhQ" firstAttribute="top" secondItem="JeB-DM-dfM" secondAttribute="bottom" constant="45" id="CJ4-YH-1mu"/>
                             <constraint firstItem="pbt-tN-tDw" firstAttribute="top" secondItem="vG7-dx-sY9" secondAttribute="top" id="Gqr-lJ-DQ1"/>
                             <constraint firstItem="Ukj-0K-dhQ" firstAttribute="leading" secondItem="vG7-dx-sY9" secondAttribute="leadingMargin" constant="20" id="KgU-sT-DBE"/>
@@ -259,11 +293,13 @@
                             <constraint firstItem="rI9-0b-E6C" firstAttribute="top" secondItem="Ukj-0K-dhQ" secondAttribute="bottom" constant="45" id="abw-GO-jjk"/>
                             <constraint firstItem="Ukj-0K-dhQ" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="buU-qb-sqG"/>
                             <constraint firstItem="JeB-DM-dfM" firstAttribute="height" secondItem="hpw-4F-wSq" secondAttribute="height" id="cki-k4-3GH"/>
+                            <constraint firstItem="1bM-wa-SCw" firstAttribute="top" secondItem="E3g-4S-gtW" secondAttribute="bottom" constant="20" id="dCQ-7M-5Hc"/>
                             <constraint firstItem="rI9-0b-E6C" firstAttribute="centerX" secondItem="vG7-dx-sY9" secondAttribute="centerX" id="faI-B9-lmh"/>
                             <constraint firstItem="rI9-0b-E6C" firstAttribute="leading" secondItem="vG7-dx-sY9" secondAttribute="leadingMargin" constant="20" id="rBv-3p-6HX"/>
                             <constraint firstItem="JeB-DM-dfM" firstAttribute="centerX" secondItem="hpw-4F-wSq" secondAttribute="centerX" id="syC-ub-5y1"/>
                             <constraint firstItem="hpw-4F-wSq" firstAttribute="top" secondItem="pbt-tN-tDw" secondAttribute="bottom" constant="35" id="wV3-8Q-t81"/>
                             <constraint firstItem="JeB-DM-dfM" firstAttribute="width" secondItem="hpw-4F-wSq" secondAttribute="width" id="woX-4j-Dfa"/>
+                            <constraint firstItem="pjz-4E-Ls0" firstAttribute="centerX" secondItem="JeB-DM-dfM" secondAttribute="centerX" id="yXN-qf-CU6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ukj-0K-dhQ" secondAttribute="trailing" constant="20" id="zUD-s9-zpQ"/>
                         </constraints>
                     </view>
@@ -282,5 +318,6 @@
         <image name="bannerlogo" width="518" height="194"/>
         <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
+        <image name="uploadImg" width="59" height="62"/>
     </resources>
 </document>
